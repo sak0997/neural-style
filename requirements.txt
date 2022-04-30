@@ -34,11 +34,9 @@ pandas
 pandocfilters
 parso
 pickleshare
-Pillow
 prometheus-client
 prompt-toolkit
 protobuf
-pyarrow
 pycparser
 pydeck
 Pygments

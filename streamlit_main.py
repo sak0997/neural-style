@@ -59,8 +59,6 @@ if upload_img is not None:
     #save one unique image per styleOption, doesn't clog up too much but also doesn't erase some recents
     output_image_path = 'images/output-images/output-userimage-' + str(styleOption) + '.png'
 
-    os_cmd = "python neural_style/neural_style.py eval --content-image  images/content-images/userinput.png --model " + model_path + " --output-image " + output_image_path + " --cuda 0"
-
     if st.button('Create Style Transfer Image'):
         os.system(os_cmd)
         st.image(output_image_path, caption='Output', use_column_width=True)
